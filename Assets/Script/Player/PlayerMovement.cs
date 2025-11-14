@@ -23,7 +23,7 @@ public class PlayerMovement : MonoBehaviour
 
         movementDirection = (forward * horizontalInput) + (right * verticalInput);
 
-        playerRigidbody.velocity = movementDirection * (playerMovementSpeed * Time.deltaTime);
+        playerRigidbody.linearVelocity = movementDirection * (playerMovementSpeed * Time.deltaTime);
     }
 
     private void Update()
